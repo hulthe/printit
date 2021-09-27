@@ -2,11 +2,15 @@
 name = "printit"
 description = "CLI for printing at Chalmers University"
 version = "1.0.0"
-authors = ["Joakim Hulthe <joakim@hulthe.net>"]
+authors = [
+	"Joakim Hulthe <joakim@hulthe.net>",
+	"Vidar Magnusson <git@vidarmagnusson.com>",
+]
 keywords = ["chalmers", "cth", "print", "printing"]
 homepage = "https://github.com/hulthe/printit"
 repository = "https://github.com/hulthe/printit"
-license = "MPL-2.0"
+# Cargo wants it to be MPL-2.0, The AUR wants it to be MPL2 ¯\_(ツ)_/¯
+license = "MPL2"
 edition = "2018"
 
 [dependencies]
