@@ -37,7 +37,6 @@ pub struct Printer {
 }
 
 #[derive(StructOpt, Debug)]
-#[structopt(name = "basic")]
 pub struct PrintOpt {
     /// Number of copies to print
     #[structopt(short, long, default_value = "1")]
@@ -64,8 +63,8 @@ pub struct PrintOpt {
     range: Vec<RangeInclusive<u32>>,
 }
 
+/// CLI for printing at Chalmers University
 #[derive(StructOpt, Debug)]
-#[structopt(name = "basic")]
 pub struct Opt {
     #[structopt(short, long)]
     debug: bool,
